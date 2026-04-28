@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #222;
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+    z-index: 10;
+}
+
+#msg-overlay {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+canvas {
+    background-color: #333;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-left: 5px dashed white;
+    border-right: 5px dashed white;
+}
